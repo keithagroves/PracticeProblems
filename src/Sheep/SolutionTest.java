@@ -17,15 +17,15 @@ class SolutionCheck {
 public class SolutionTest {
     @Test
     public void setTests() {
-        assertEquals("1 sheep...", Exersize.countingSheep(1));
-        assertEquals("1 sheep...2 sheep...", Exersize.countingSheep(2));
-        assertEquals("1 sheep...2 sheep...3 sheep...", Exersize.countingSheep(3));
+        assertEquals("1 sheep...", Exercize.countingSheep(1));
+        assertEquals("1 sheep...2 sheep...", Exercize.countingSheep(2));
+        assertEquals("1 sheep...2 sheep...3 sheep...", Exercize.countingSheep(3));
     }
     
     @Test
     public void randomTests() {
         Random rand = new Random();
         int randomNum = rand.nextInt(100) + 1;
-        assertEquals(SolutionCheck.countingSheep(randomNum), Exersize.countingSheep(randomNum));
+        assertEquals(SolutionCheck.countingSheep(randomNum), Exercize.countingSheep(randomNum));
     }
 }
